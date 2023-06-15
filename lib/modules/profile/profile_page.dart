@@ -1,3 +1,4 @@
+import 'package:flutter_getx/modules/profile/profile_actions.dart';
 import 'package:flutter_getx/modules/profile/profile_binding.dart';
 import 'package:flutter_getx/modules/profile/profile_controller.dart';
 import 'package:get/get.dart';
@@ -12,8 +13,8 @@ class ProfilePage extends StatelessWidget {
         appBar: AppBar(
           title: const Text('Profile'),
         ),
-        body: const Center(
-          child: Text("Profile"),
+        body: Center(
+          child: TextButton(onPressed: () {ProfileActions().buttonPressed();}, child: Text("Press to print")),
         ),
       ),
     );
